@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏颜色-->
+    <color name="colorPrimary">#3F51B5</color>
+    <!--顶部状态栏颜色-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--界面中其他元素的颜色，该颜色一般与上面的两种颜色形成高反差-->
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_ripple_color">#FA78A4</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gray">#9B9898</color>
+    <color name="light_gray">#E7E6E6</color>
+    <color name="navigation_bar_color">#F9F9F9</color>
+
+    <color name="primary_light">#C5CAE9</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+</resources>

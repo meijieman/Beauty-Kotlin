@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ApptActivity">
+
+    <include layout="@layout/include_app_bar_layout" />
+
+    <include layout="@layout/include_search_customer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="时间段" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_appt_time_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="选择日期"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textSize="16sp"
+            app:backgroundTint="@color/design_default_color_primary"
+            app:rippleColor="@color/btn_ripple_color" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_appt_time_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="开始时间"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textSize="16sp"
+            app:backgroundTint="@color/design_default_color_primary"
+            app:rippleColor="@color/btn_ripple_color" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_appt_time_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="结束时间"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textSize="16sp"
+            app:backgroundTint="@color/design_default_color_primary"
+            app:rippleColor="@color/btn_ripple_color" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_daily_content_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="20dp"
+        app:hintTextAppearance="@style/MyStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_appt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="备注"
+            android:lines="3"
+            android:minWidth="160dp"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_appt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="新增预约"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textSize="16sp"
+        app:backgroundTint="@color/design_default_color_primary"
+        app:rippleColor="@color/btn_ripple_color" />
+</LinearLayout>

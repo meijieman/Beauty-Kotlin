@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Beauty</string>
+
+    <string name="title_home">每日</string>
+    <string name="title_dashboard">管理</string>
+    <string name="title_notifications">分析</string>
+
+    <string name="behavior_sample_title">com.major.beauty.ui.behavior.SampleTitleBehavior</string>
+
+    <string name="behavior_sample_header">com.major.beauty.ui.behavior.SampleHeaderBehavior</string>
+    <string name="behavior_recyclerview">com.major.beauty.ui.behavior.RecyclerViewBehavior</string>
+</resources>
